@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-container {
+  text-align: center;
+  justify-content: center;
+  min-height: fit-content;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.myNav {
+  background-color: #343e47;
+  border: none;
+  color: #c29f9f;
+  font-size: 14.5px;
+  width: 100%;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+.logo p {
+  margin: 0;
+}
+
+.code {
+  font-size: 17px;
+  color: #fdd20eff;
+}
+
+.first {
+  font-size: 28px;
+  color: #fc766aff;
+  font-family: "Lobster", cursive;
+}
+
+.last {
+  font-size: 22px;
+  color: #5b84b1ff;
+  font-family: "Lobster", cursive;
+}
+
+.menu-content {
+  width: 100px;
+  color: #ffffff;
+  padding: 7px 7px;
+  font-size: 16px;
+  margin: 0;
+}
+.menu-content:hover {
+  width: 100px;
+  color: #ffffff;
+  margin: 0;
+  padding: 7px 7px;
+  background-color: black;
+  box-shadow: 0 1px 1px 1px #ffffff;
+}
+
+/* Home Page */
+
+.profile-parent {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-top: 200px;
+}
+
+.colz .colz-icon {
+  color: white;
+  padding-left: 0px;
+}
+
+.social-media-icon {
+  color: #52575d;
+  width: 30px;
+  height: 30px;
+  margin-left: 3%;
+}
+.colz .colz-icon .social-media-icon:hover {
+  transform: scale(1.5);
+}
+
+.profile-details-name {
+  font-weight: bold;
+  font-size: 48px;
+}
+.primary-text {
+  color: whitesmoke;
+  font-weight: bold;
+}
+.highlighted-text {
+  color: #7e80e6;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.profile-details-role {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0px 24px 0px;
+}
+
+.profile-role-tagline {
+  font-size: 19px;
+  margin: 5px 0 0 0;
+}
+
+.profile-option {
+  justify-content: center;
+}
+
+.getResumeBtn {
+  padding: 10px 15px;
+  margin: 0 0 0 28px;
+  background-color: #474e61;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+}
+.getResumeBtn:hover {
+  background-color: black;
+  color: #ffffff;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0px 0px #52575d;
+  border-radius: 10%;
+  height: 380px;
+  width: 380px;
+  margin: 0 0 0 10%;
+}
+.profile-picture-background {
+  height: 92%;
+  width: 90%;
+}
+.profile-picture-background img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10%;
+}
+
+.profile-picture-background:hover {
+  transform: scale(1);
+  transition: 1s ease-out;
+}
+
+@media screen and (max-width: 1100px) {
+  .profile-picture {
+    margin: 0 0px 0 80px;
+  }
+  .profile-details-name {
+    font-size: 36px;
+  }
+  .highlighted-text {
+    font-size: 36px;
+  }
+  .profile-details-role .primary-text {
+    font-size: 12px;
+  }
+  .profile-option {
+    justify-content: center;
+  }
+  .profile-option .btn {
+    width: 120px;
+    padding: 11px 0;
+    z-index: 700;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .profile-picture {
+    margin: 0 !important;
+  }
+  .profile-parent {
+    flex-direction: column-reverse;
+    margin-top: 200px;
+  }
+  .profile-option {
+    display: flex;
+    justify-content: center;
+  }
+  .profile-details {
+    margin: 25px 0 0;
+  }
+  .profile-details-name {
+    font-size: 32px;
+  }
+  .highlighted-text {
+    width: 100%;
+    font-size: 32px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .typicalText {
+    font-size: 24px;
+  }
+  .profile-details-name,
+  .profile-details-role {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .profile-picture {
+    height: 275px;
+    width: 275px;
+    margin: auto;
+  }
+  .profile-details {
+    width: 90%;
+    margin: auto;
+  }
+
+  .profile-details-name {
+    font-size: 24px;
+  }
+
+  .highlighted-text {
+    width: 100%;
+    font-size: 24px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .profile-details-role {
+    text-align: center;
+  }
+
+  .profile-role-tagline {
+    width: 60%;
+  }
+}
