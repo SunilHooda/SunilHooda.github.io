@@ -12,6 +12,7 @@ import {
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import "./Home.css";
+import pdf from "../assets/Resume.pdf";
 
 export default function Home() {
   const [expand, updateExpanded] = useState(false);
@@ -68,18 +69,16 @@ export default function Home() {
                         onClick={() => updateExpanded(false)}
                       >
                         <p className="menu-content">
-                          {" "}
                           <AiOutlineUser style={{ marginBottom: "2px" }} />{" "}
                           ABOUT ME
                         </p>
                       </Nav.Link>
 
                       <Nav.Link
-                        href="#resume"
+                        href="#skills"
                         onClick={() => updateExpanded(false)}
                       >
                         <p className="menu-content">
-                          {" "}
                           <AiOutlineRocket style={{ marginBottom: "2px" }} />
                           SKILLS
                         </p>
@@ -90,7 +89,6 @@ export default function Home() {
                         onClick={() => updateExpanded(false)}
                       >
                         <p className="menu-content">
-                          {" "}
                           <AiOutlineFundProjectionScreen
                             style={{ marginBottom: "2px" }}
                           />
@@ -103,18 +101,17 @@ export default function Home() {
                         onClick={() => updateExpanded(false)}
                       >
                         <p className="menu-content">
-                          {" "}
                           <AiOutlinePhone style={{ marginBottom: "2px" }} />
                           CONTACT
                         </p>
                       </Nav.Link>
 
                       <Nav.Link
-                        href="#home"
+                        href={pdf}
+                        target="_blank"
                         onClick={() => updateExpanded(false)}
                       >
                         <p className="menu-content">
-                          {" "}
                           <CgFileDocument style={{ marginBottom: "2px" }} />
                           RESUME
                         </p>
@@ -164,7 +161,6 @@ export default function Home() {
                 <div className="profile-details-role">
                   <span className="primary">
                     <h1>
-                      {" "}
                       <Typewriter
                         className="typicalText"
                         options={{
@@ -188,11 +184,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="profile-option">
-                  <a
-                    href="./Sunil Hooda Resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={pdf} target="_blank">
                     <button className="getResumeBtn">Get Resume</button>
                   </a>
                 </div>

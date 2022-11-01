@@ -2,6 +2,7 @@ import React from "react";
 import "./about.css";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
+import pdf from "../assets/Resume.pdf";
 
 export default function AboutMe() {
   return (
@@ -77,11 +78,7 @@ export default function AboutMe() {
           </div>
 
           <div className="aboutBtnDiv">
-            <a
-              href=".././Sunil Hooda Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={pdf} target="_blank">
               <button className="getBtn">Get Resume</button>
             </a>
           </div>
