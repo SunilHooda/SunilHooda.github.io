@@ -37,12 +37,10 @@ export default function Home() {
                   <Navbar.Brand href="#home">
                     <div className="logo">
                       <p>
-                        <span className="code">&#x0003C;</span>
                         <span className="first">S</span>
                         <span className="last">unil</span>
                         <span className="first"> H</span>
                         <span className="last">ooda</span>
-                        <span className="code">&#x0002F;&#x0003E;</span>
                       </p>
                     </div>
                   </Navbar.Brand>
@@ -165,10 +163,9 @@ export default function Home() {
                         className="typicalText"
                         options={{
                           strings: [
-                            "FULL STACK DEVELOPER",
-                            "LOVE TO CODE ❤️",
                             "MERN STACK",
                             "WEB DEVELOPER",
+                            "LOVE TO CODE ❤️",
                           ],
                           autoStart: true,
                           loop: true,
@@ -178,8 +175,7 @@ export default function Home() {
                     </h1>
 
                     <span className="profile-role-tagline">
-                      It's Nice To Meet You. Adaptable and responsible web
-                      developer capable of writing production-ready code.
+                      It's nice to meet you. Hope you enjoy your stay.
                     </span>
                   </span>
                 </div>
