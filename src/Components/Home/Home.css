@@ -178,7 +178,6 @@
   .profile-picture {
     height: 320px;
     width: 550px;
-    /* margin: 0 0 0 10px; */
   }
   .getResumeBtn {
     width: 150px;
@@ -200,7 +199,6 @@
   }
   .profile-picture {
     padding-top: 0px !important;
-    /* margin-top: -100px !important ; */
   }
 }
 

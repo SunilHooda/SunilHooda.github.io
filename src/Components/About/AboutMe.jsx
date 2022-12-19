@@ -78,7 +78,7 @@ export default function AboutMe() {
           </div>
 
           <div className="aboutBtnDiv">
-            <a href={pdf} target="_blank">
+            <a href={pdf} target="_blank" rel="noreferrer">
               <button className="getBtn">Get Resume</button>
             </a>
           </div>

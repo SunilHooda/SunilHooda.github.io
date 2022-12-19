@@ -7,9 +7,9 @@ export const Projectdata = [
     id: 1,
     name: "boAt-lifeStyle.com Clone",
     image: boat,
-    desc: "ndia's fastest growing audio & wearables brand. The most incredible range of wireless earphones, earbuds, headphones, smart watches, and home audio",
+    desc: "India's fastest growing audio & wearables brand. The most incredible range of wireless earphones, earbuds, headphones, smart watches, and home audio",
     techStack: "HTML | CSS | Javascript | ReactJS | ChakraUI",
-    livelink: "https://isnt-sunilhooda698-gmail-com-awesome-7f47d.netlify.app/",
+    livelink: "https://musicwarehouse.vercel.app/",
     gitlink: "https://github.com/SunilHooda/boAt-Lifestyle.com-Clone",
   },
   {
@@ -27,7 +27,7 @@ export const Projectdata = [
     image: deccan,
     desc: "A web Application to Find the latest news Headlines from India and around the world in various fields.",
     techStack: "HTML | CSS | Javascript | Bootstrap",
-    livelink: "https://resilient-seahorse-6f4d05.netlify.app/",
+    livelink: "https://bespoke-sorbet-dce52b.netlify.app/",
     gitlink: "https://github.com/hemantacharya1/-present-sponge-6220",
   },
 ];

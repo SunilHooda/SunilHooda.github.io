@@ -122,8 +122,19 @@ export default function Home() {
           </div>
 
           {/* HomePage */}
-          <div className="row p-5" style={{ marginTop: "80px" }}>
-            <div className="profile-parent col-md-12 mt-0 mb-5 p-5">
+          <div
+            className="row p-5"
+            style={{
+              marginTop: "120px",
+            }}
+          >
+            <div
+              className="profile-parent col-md-12 mt-0 mb-5 p-5"
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <div className="profile-details">
                 <div className="colz">
                   <div className="colz-icon">
@@ -180,7 +191,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="profile-option">
-                  <a href={pdf} target="_blank">
+                  <a href={pdf} target="_blank" rel="noreferrer">
                     <button className="getResumeBtn">Get Resume</button>
                   </a>
                 </div>
