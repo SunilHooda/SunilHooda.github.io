@@ -22,7 +22,7 @@ This is a Personal Portfolio Website build to showcase my project which I have d
 
 <h1>Home Page</h1>
 <br>
-<img src="https://github.com/SunilHooda/SunilHooda.github.io/blob/master/public/homepage.png>
+<img src="https://github.com/SunilHooda/SunilHooda.github.io/blob/master/public/homepage.png">
 <br>
 <h1>AboutMe Section</h1>
 <br>
@@ -42,6 +42,6 @@ This is a Personal Portfolio Website build to showcase my project which I have d
 <br>
 <h1>Connect With Me</h1>
 <br>
-<img src="https://github.com/SunilHooda/SunilHooda.github.io/blob/master/public/connectWithMe.png>
+<img src="https://github.com/SunilHooda/SunilHooda.github.io/blob/master/public/connectWithMe.png">
 <br>
 
