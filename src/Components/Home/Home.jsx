@@ -190,6 +190,7 @@ export default function Home() {
                     </span>
                   </span>
                 </div>
+
                 <div className="profile-option">
                   <a href={pdf} target="_blank" rel="noreferrer">
                     <button className="getResumeBtn">Get Resume</button>
