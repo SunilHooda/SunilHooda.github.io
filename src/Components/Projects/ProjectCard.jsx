@@ -1,40 +1,58 @@
+import {
+  Box,
+  Flex,
+  Image,
+  VStack,
+  Text,
+  HStack,
+  Button,
+} from "@chakra-ui/react";
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
-function ProjectCard({ props }) {
+const ProjectCard = ({ props }) => {
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.image} alt="card-img" />
-      <Card.Body>
-        <Card.Title>
-          <strong>{props.name}</strong>
-        </Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>{props.desc}</Card.Text>
-        <Card.Text style={{ textAlign: "center" }}>
-          Tech Stack : {props.techStack}`
-        </Card.Text>
-        <Button
-          variant="primary"
-          href={props.gitlink}
-          target="_blank"
-          style={{ margin: "5px" }}
-        >
-          <BsGithub /> &nbsp; {"Github"}
-        </Button>
-        <Button
-          variant="primary"
-          href={props.livelink}
-          target="_blank"
-          style={{ margin: "5px" }}
-        >
-          <CgWebsite /> &nbsp;
-          {"Live"}
-        </Button>
-      </Card.Body>
-    </Card>
+    <Box className="projectCardView">
+      <Flex>
+        <VStack gap={"2px"}>
+          <Box w={"100%"} h={"100%"} paddingBottom={3} borderRadius="10px">
+            <Image src={props.image} alt="card-img" w={"100%"} h={"100%"} />
+          </Box>
+
+          <Text fontSize={"xl"} fontWeight={"bold"}>
+            {props.name}
+          </Text>
+          <Text fontSize={"17px"} textAlign={"justify"}>
+            {props.desc}
+          </Text>
+          <Text>
+            <Text as={"span"} fontWeight={"600"}>
+              Tech Stack :{" "}
+            </Text>
+            <Text as={"span"}>{props.techStack}</Text>
+          </Text>
+          <HStack marginTop={"5px"}>
+            <a href={props.gitlink} target={"_blank"} rel="noopener noreferrer">
+              <Button variant="primary" className="btnPrimary" target="_blank">
+                <BsGithub /> &nbsp; {"Github"}
+              </Button>
+            </a>
+            <a
+              href={props.livelink}
+              target={"_blank"}
+              rel="noopener noreferrer"
+            >
+              <Button variant="primary" className="btnPrimary" target="_blank">
+                <CgWebsite /> &nbsp;
+                {"Live"}
+              </Button>
+            </a>
+          </HStack>
+        </VStack>
+      </Flex>
+    </Box>
   );
-}
+};
+
 export default ProjectCard;

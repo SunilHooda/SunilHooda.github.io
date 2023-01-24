@@ -1,45 +1,78 @@
+import { Box, Center, Container, VStack, HStack, Text } from "@chakra-ui/react";
 import React from "react";
-import "./skillset.css";
-import { Container, Row } from "react-bootstrap";
-import Techstack from "./TechStack";
-import Toolstack from "./ToolStack";
-import Calender from "./GithubCalender";
-import Stats from "./Stats";
+import Calendar from "./GithubCalendar";
+import GithubStats from "./GithubStats";
+import TechStack from "./TechStack";
+import ToolStack from "./ToolStack";
 
-function SkillSet() {
+const SkillSet = () => {
   return (
-    <Container id="skills" fluid className="skill-section">
-      <Container>
-        <Row
-          style={{ justifyContent: "center", margin: "-50px" }}
-          id="skills"
-        ></Row>
-        <h1 className="project-heading skills-section">
-          Professional <strong style={{ color: "#7e80e6" }}>Skillset </strong>
-        </h1>
-
-        <Techstack />
-
-        <h1 className="project-heading">
-          <strong style={{ color: "#7e80e6" }}>Tools</strong> I use
-        </h1>
-        <Toolstack />
-
-        <h1 className="project-heading">
-          My
-          <strong style={{ color: "#7e80e6" }}> GitHub Calendar</strong>
-        </h1>
-        <Calender />
-
-        <h1 className="project-heading" style={{ marginTop: "40px" }}>
-          My
-          <strong style={{ color: "#7e80e6" }}> Statistics</strong>
-        </h1>
-        <Stats />
+    <Box name={"Skills"} pt={"70px"} pb={"20px"}>
+      <Container maxW={"container.xl"}>
+        <Center>
+          <VStack>
+            <HStack
+              fontSize={{ base: "2xl", sm: "2xl", md: "4xl", lg: "5xl" }}
+              fontWeight="bold"
+              mb={"-10px"}
+            >
+              <Text>My</Text>
+              <Text color={"#2F7693"}>Skills</Text>
+            </HStack>
+            <Text fontSize={"18px"} color="#7e80e6">
+              These are the technologies I've worked with
+            </Text>
+            <br />
+            <HStack
+              fontSize={{ base: "2xl", sm: "2xl", md: "3xl", lg: "4xl" }}
+              fontWeight="bold"
+              mb={"20px"}
+            >
+              <Text>Professional</Text>
+              <Text color={"#2F7693"}>Skillset </Text>
+            </HStack>
+            <TechStack />
+            <br />
+            <br />
+            <HStack
+              fontSize={{ base: "2xl", sm: "2xl", md: "3xl", lg: "4xl" }}
+              fontWeight="bold"
+              margin={"auto"}
+              mb={"20px"}
+            >
+              <Text color={"#2F7693"}>Tools </Text>
+              <Text>I use</Text>
+            </HStack>
+            <ToolStack />
+            <br />
+            <br />
+            <HStack
+              fontSize={{ base: "2xl", sm: "2xl", md: "3xl", lg: "4xl" }}
+              fontWeight="bold"
+              margin={"auto"}
+              mb={"20px"}
+            >
+              <Text>My</Text>
+              <Text color={"#2F7693"}>Github Calendar</Text>
+            </HStack>
+            <Calendar />
+            <br />
+            <br />
+            <HStack
+              fontSize={{ base: "2xl", sm: "2xl", md: "3xl", lg: "4xl" }}
+              fontWeight="bold"
+              margin={"auto"}
+              mb={"20px"}
+            >
+              <Text>My</Text>
+              <Text color={"#2F7693"}>Github Statistics</Text>
+            </HStack>
+            <GithubStats />
+          </VStack>
+        </Center>
       </Container>
-      <hr style={{ marginTop: "100px" }} />
-    </Container>
+    </Box>
   );
-}
+};
 
 export default SkillSet;

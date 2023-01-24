@@ -3,6 +3,7 @@ import zee5 from "./Images/Zee5.png";
 import deccan from "./Images/Deccan.png";
 import expedia from "./Images/expedia.png";
 import airtable from "./Images/airtable.png";
+import mfh from "./Images/mfh.png";
 
 export const Projectdata = [
   {
@@ -53,7 +54,7 @@ export const Projectdata = [
   {
     id: 6,
     name: "ikea.com Clone",
-    image: airtable,
+    image: mfh,
     desc: "ikea.com is an online e-commerce platform which deal in home funiture. Its products are almost everything which we use in our house like Furniture, Appliances, Kitchen Products, Storage products and spare parts for the same.",
     techStack:
       "CSS | Javascript | ReactJS | Redux | ChakraUI | NodeJS | Express | Mongoose | MongoDB",

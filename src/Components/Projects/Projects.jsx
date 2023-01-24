@@ -1,31 +1,58 @@
+import {
+  Box,
+  Center,
+  Container,
+  VStack,
+  HStack,
+  Text,
+  Grid,
+  GridItem,
+} from "@chakra-ui/react";
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-// import { FaGithubSquare, FaLink } from "react-icons/fa";
+import ProjectCard from "./ProjectCard";
 import { Projectdata } from "./ProjectData";
-import ProjectCards from "./ProjectCard";
-import "./Project.css";
 
-export const Project = () => {
+const ProjectSection = () => {
   return (
-    <Container fluid>
-      <div id="project" className="projects-sections"></div>
-      <Container>
-        <h1 className="project-heading">
-          My Recent <strong style={{ color: "#7e80e6" }}>Works </strong>
-        </h1>
-        <p style={{ color: "#7e80e6", fontSize: "17px", fontWeight: "500px" }}>
-          Here are a few projects I've worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {Projectdata.map((item) => (
-            <Col md={4} className="project-card" key={item.id}>
-              <ProjectCards props={item} />
-            </Col>
-          ))}
-        </Row>
+    <Box name="Projects" pt={"70px"} pb={"20px"}>
+      <Container maxW={"container.xl"}>
+        <Center>
+          <VStack>
+            <HStack
+              fontSize={{ base: "2xl", sm: "2xl", md: "4xl", lg: "5xl" }}
+              fontWeight="bold"
+              mb={"-10px"}
+            >
+              <Text>My Recent</Text>
+              <Text color={"#2F7693"}>Projects</Text>
+            </HStack>
+            <Text fontSize={"18px"} color="#7e80e6">
+              Here are a few projects I've worked on recently.
+            </Text>
+            <br />
+            <Grid
+              w="full"
+              templateColumns={{
+                base: "repeat(1, 1fr)",
+                sm: "repeat(1, 1fr)",
+                md: "repeat(2, 1fr)",
+                lg: "repeat(3, 1fr)",
+              }}
+              p={"10px"}
+              justifyContent={"center"}
+              gap={10}
+            >
+              {Projectdata.map((item) => (
+                <GridItem key={item.id}>
+                  <ProjectCard props={item} key={item.id} />
+                </GridItem>
+              ))}
+            </Grid>
+          </VStack>
+        </Center>
       </Container>
-
-      <hr style={{ marginTop: "100px" }} />
-    </Container>
+    </Box>
   );
 };
+
+export default ProjectSection;

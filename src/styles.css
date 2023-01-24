@@ -1,0 +1,109 @@
+/* Navbar */
+.firstLetter {
+  font-size: 30px;
+  color: #fc766aff;
+  font-family: "Lobster", cursive;
+  font-weight: 600;
+}
+
+.lastLetter {
+  font-size: 24px;
+  color: #e3e9ee;
+  font-family: "Lobster", cursive;
+}
+
+.tabBox {
+  align-items: center;
+  color: white;
+  height: 40px;
+  padding: 0px 18px;
+  border-radius: 5px;
+  column-gap: 2.5px;
+}
+
+.tabBox:hover {
+  color: black;
+  background-color: #b7ced8;
+  box-shadow: 0 1px 1px 1px black;
+}
+
+/* Home Page */
+.social-media-icon {
+  color: black;
+  font-size: 30px;
+}
+
+.social-media-icon:hover {
+  transform: scale(1.5);
+}
+
+.profilePicture {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10%;
+}
+
+/* Skill Set*/
+.techIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0px 10px;
+  border-radius: 5px;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+  transition: all 0.4s ease 0s;
+}
+
+.techIcons:hover {
+  transform: scale(1.05);
+  overflow: hidden;
+}
+
+/* Project Section*/
+.projectCard {
+  height: auto;
+}
+
+.projectCardView {
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+  background-color: transparent;
+  opacity: 0.9;
+  transition: all 0.5s ease 0s;
+  height: 100%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.projectCardView:hover {
+  transform: scale(1.04);
+  overflow: hidden;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
+}
+
+.btnPrimary {
+  color: white;
+  background-color: #623686 !important;
+  border-color: #623686 !important;
+}
+
+.btnPrimary:hover {
+  background-color: #6d20c5d7 !important;
+  border-color: #6d20c5d7 !important;
+}
+
+/* Contact Section*/
+.contact_info {
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.26);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.contact_info:hover {
+  box-shadow: 0 0 7px #87209e;
+}
