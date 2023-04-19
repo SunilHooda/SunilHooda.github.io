@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8f09cd54.css",
-    "main.js": "/static/js/main.97744c8e.js",
+    "main.js": "/static/js/main.83ddfa17.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Zee5.png": "/static/media/Zee5.2f65af557a40b95aa409.png",
     "static/media/expedia.png": "/static/media/expedia.ceb24378cfb52cbf36f5.png",
@@ -9,7 +9,7 @@
     "static/media/Deccan.png": "/static/media/Deccan.a6883a53f1cd397df9cd.png",
     "static/media/airtable.png": "/static/media/airtable.33b3c1e48072bbc82d61.png",
     "static/media/boat.png": "/static/media/boat.18a282952b7f39e71573.png",
-    "static/media/Sunil-Hooda-Resume.pdf": "/static/media/Sunil-Hooda-Resume.33a897edee6a03138ba5.pdf",
+    "static/media/Sunil-Hooda-Resume.pdf": "/static/media/Sunil-Hooda-Resume.43d76f4cfb6fc8523ca8.pdf",
     "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/reactIcon.svg": "/static/media/reactIcon.946f1d46cc66ee99c7a2aa40f66f9011.svg",
     "static/media/nodeIcon.svg": "/static/media/nodeIcon.5bfbfb680ce29ca68b1cc461e11a6a4c.svg",
@@ -21,11 +21,11 @@
     "static/media/cssIcon.svg": "/static/media/cssIcon.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/htmlIcon.svg": "/static/media/htmlIcon.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "main.8f09cd54.css.map": "/static/css/main.8f09cd54.css.map",
-    "main.97744c8e.js.map": "/static/js/main.97744c8e.js.map",
+    "main.83ddfa17.js.map": "/static/js/main.83ddfa17.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f09cd54.css",
-    "static/js/main.97744c8e.js"
+    "static/js/main.83ddfa17.js"
   ]
 }
