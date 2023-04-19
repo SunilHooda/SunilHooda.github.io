@@ -18,7 +18,7 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-scroll";
-import resume from "./assets/SunilHoodaResume.pdf";
+import resume from "./assets/Sunil-Hooda-Resume.pdf";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -35,6 +35,13 @@ const Navbar = () => {
     fontWeight: "600",
     cursor: "pointer",
   };
+
+  const handleClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1Q4hvsaWK5yNJ0pfGeZdxfDO32-WRX_mL/view?usp=sharing"
+    );
+  };
+
   return (
     <Box
       w={"100%"}
@@ -102,8 +109,13 @@ const Navbar = () => {
             </Flex>
           </Link>
 
-          <a href={resume} target="_blank" rel="noreferrer">
-            <Flex className="tabBox">
+          <a
+            href={resume}
+            target="_blank"
+            rel="noreferrer"
+            download="Sunil-Hooda-Resume"
+          >
+            <Flex className="tabBox" onClick={handleClick}>
               <CgFileDocument size={20} />
               <Text fontSize={"18px"}>RESUME</Text>
             </Flex>

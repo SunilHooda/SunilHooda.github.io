@@ -2,9 +2,15 @@ import { Box, Center, Text, HStack, VStack, Button } from "@chakra-ui/react";
 import React from "react";
 import { GrMail } from "react-icons/gr";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
-import resume from "./assets/SunilHoodaResume.pdf";
+import resume from "./assets/Sunil-Hooda-Resume.pdf";
 
 const AboutMe = () => {
+  const handleClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1Q4hvsaWK5yNJ0pfGeZdxfDO32-WRX_mL/view?usp=sharing"
+    );
+  };
+
   return (
     <Box name="About" pt={"40px"} pb={"20px"}>
       <Center height={"645px"}>
@@ -82,13 +88,19 @@ const AboutMe = () => {
             </HStack>
 
             <HStack>
-              <a href={resume} target="_blank" rel="noreferrer">
+              <a
+                href={resume}
+                target="_blank"
+                download="Sunil-Hooda-Resume"
+                rel="noreferrer"
+              >
                 <Button
                   backgroundColor="#343e47"
                   color="#ffffff"
                   fontSize={18}
                   borderRadius={10}
                   _hover={{ backgroundColor: "#5b84b1ff" }}
+                  onClick={handleClick}
                 >
                   Get Resume
                 </Button>
