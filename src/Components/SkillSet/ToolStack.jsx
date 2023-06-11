@@ -103,7 +103,7 @@ const ToolStack = () => {
           <Text mt={1}> Postman</Text>
           <Image
             src={
-              "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png"
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSiVNjqy7i4sJwZqoFMEyjSF02KpEmZmqW6NGJEsWS5QaLLpncWgPIIwUMusrU3RLDM-0&usqp=CAU"
             }
             alt=""
             width={"100%"}
